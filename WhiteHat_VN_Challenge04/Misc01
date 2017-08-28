@@ -1,0 +1,8 @@
+<Need to paste code>
+
+It's base 64 encoded, then a bunch of chr()'s.
+Replace exec() with print to see the output.
+More chr()'s.
+Replace exec() with print again to see the output.
+
+Flag!

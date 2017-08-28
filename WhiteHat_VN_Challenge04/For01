@@ -1,0 +1,45 @@
+We suspect that the system has been stolen data by a hacker via a storage device. Pls help us investigate which device he uses and what time that device is disconnect to the system. The memory dump file below servers for the investigation. Format: HH_DeviceName (Time at UTC+7)
+
+Downloaded file is a .raw memory image that's compatible with volatility.
+
+Use this plugin:
+https://github.com/kevthehermit/volatility_plugins/tree/master/usbstor
+
+Found USB Drive: 000000000000000354&0
+    Serial Number:    000000000000000354&0
+    Vendor:    Innostor
+    Product:    Innostor
+    Revision:    1.00
+    ClassGUID:    Innostor
+
+    Mounted Volume:    \??\Volume{ea53548a-81fa-11e7-8d60-000c29461a00}
+    Drive Letter:    \DosDevices\E:
+    Friendly Name:    Innostor Innostor USB Device
+    Device Last Connected:    2017-08-17 07:05:50 UTC+0000
+
+    Class:    DiskDrive
+    Service:    disk
+    DeviceDesc:    Disk drive
+    Capabilities:    16
+    Mfg:    (Standard disk drives)
+    ConfigFlags:    0
+    Driver:    {4D36E967-E325-11CE-BFC1-08002BE10318}\0001
+    Compatible IDs:
+        USBSTOR\Disk
+        USBSTOR\RAW
+
+
+    HardwareID:
+        USBSTOR\DiskInnostorInnostor________1.00
+        USBSTOR\DiskInnostorInnostor________
+        USBSTOR\DiskInnostor
+        USBSTOR\InnostorInnostor________1
+        InnostorInnostor________1
+        USBSTOR\GenDisk
+        GenDisk
+
+
+
+Device name is Innostor. Last connected is 7:05:50, which at UTC +7 is 14:05:50
+
+Flag: WhiteHat{sha1(14_Innostor)}

@@ -1,0 +1,17 @@
+Ran through IDA and got the pseudo code.
+Displays a menu:
+1: List (ls) Directory
+2: Read file
+3: Exit
+
+Goal: read "flag"
+
+Input strings could not contain the word "flag"
+
+The 1 option did a system call of ls <input>. 
+
+Solution:
+Choose 1 option
+. ; cat fl\ag;
+
+Flag!

