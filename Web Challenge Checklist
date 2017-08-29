@@ -1,0 +1,31 @@
+In No Particular Order
+----------------------
+
+- What scripts are being loaded
+- What language is the backend written in
+- What are the data sources (Internal, External)
+- What directories can be found (Without dirbuster)
+- What subdirectories can be found (aquatone)
+- What inputs are allowed
+- What inputs are forbidden
+- What GET parameters are there
+- What POST parameters are there
+- Is anything SQL injectable
+- Is anything PHP filter vulnerable
+- Is there information in the the cookies (especially the session)
+- Is there directory listing
+- Any potential LFI/RFI points
+- Are any inputs reflected? (XSS)
+- Are any inputs eval'd
+
+----------------------
+Nikto Output
+----------------------
+
+
+
+
+
+-----------------------
+Dirbuster Output
+-----------------------
