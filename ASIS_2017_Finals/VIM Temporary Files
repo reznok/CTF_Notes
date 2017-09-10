@@ -1,0 +1,6 @@
+VIM and GEdit leave behind backup copies of files after editing.
+Example:
+file.txt -> file.txt~
+
+Check for these!
+index.php~ etc.

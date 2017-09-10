@@ -1,0 +1,18 @@
+XXE can be used when there is some kind of XML parsing going on.
+
+Used for injecting file-read commands into XML.
+Can be used inside .docx and other XML supporting formats.
+
+To add into a .docx:
+- Open .docx with 7zip
+- Modify word/document.xml
+- Add XXE as 2nd line (below the <xml version>
+- Save .docx and upload
+
+XXE Payloads
+-----------
+https://gist.github.com/staaldraad/01415b990939494879b4
+
+<!DOCTYPE roottag [<!ENTITY xxe SYSTEM "php://filter/read=convert.base64-encode/resource=/fileSharing/s3cRetP4th/flagIsHeregRabiT.flag"> ]>
+
+

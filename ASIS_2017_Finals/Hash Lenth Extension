@@ -1,0 +1,9 @@
+Vulnerability that occurs when you control the length of the hashed data.
+Example:
+
+hash(KEY + message)
+hash(hash(key) + message)
+
+Tools to exploit:
+hashpump (python: hashpumpy)
+hash_extender
